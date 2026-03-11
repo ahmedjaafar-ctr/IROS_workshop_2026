@@ -1,47 +1,47 @@
 ---
-title: Start
+title: Schedule
 nav: true
 ---
 
-# Get Started
+# Create Lesson Content
 
-The `workshop-template` [repository](https://github.com/evanwill/workshop-template) is a template project--to get started quickly, make a copy and fill in your own content and customizations.
-This [site](https://evanwill.github.io/workshop-template/) demonstrates the output on gh-pages, and the content pages serve as examples.
+Edit the lesson Markdown files to create content pages.
 
-Overview:
+[Markdown](https://daringfireball.net/projects/markdown/) is a standard to [simplify writing](https://evanwill.github.io/_drafts/notes/writing-markdown.html) content for the web. 
+[GitHub markdown flavor](https://help.github.com/articles/basic-writing-and-formatting-syntax/) can be used any where on GitHub and in Jekyll.
+The basics are intuitive, you can learn in about a minute!
+See [Markdown in a Minute](https://evanwill.github.io/_drafts/notes/markdown-minute.html) to get started.
 
-1. Copy the code to your own repository by clicking the green "Use this template" button on [workshop-template](https://github.com/evanwill/workshop-template) (alternatively, import the [repository](https://github.com/evanwill/workshop-template) on GitHub or manually copy the files into a new repo).
-2. Clone to your local machine, or work on the GitHub web interface to edit files.
-3. Edit the `_config.yml` with your info.
-4. Edit the content pages in markdown.
-5. Add images to the "images" folder.
-5. Push to GitHub (or commit on the web interface).
-6. In your repo's settings, activate gh-pages, using main branch.
+When creating content pages:
 
-## Config
+- to include a page in the nav, add `nav: true` to the file's yml front matter.
+- the `title:` value will appear in the nav, sorted in the order of filenames. For simplicity use leading numbers in the lesson page filenames to create correct order.
+- the default layout does not add `title` to the page, so it can be a short for the nav. So add a title in the Markdown content.
 
-Edit the `_config.yml` to get your workshop website set up.
+## Add Figures 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Pellentesque eu velit felis. 
-Duis fermentum est nec mollis scelerisque. Vivamus interdum efficitur mauris, et dignissim velit egestas vitae. 
-Cras dignissim sagittis varius. Pellentesque eu laoreet dui.
+Using figure include:
 
-```
-Praesent congue:
-    eros = eget
-    accumsan euismod
-```
+- put all images in the `images` directory.
+- figures will be centered, and can optionally be given a caption and percentage width.
+- in a markdown file where you want the image to appear, use the `figure.html` include on its own line.
+- pattern: `{% raw %}{% include figure.html img="my-cat.jpg" alt="cat" caption="My cat" width="50%" %}{% endraw %}`
 
-Praesent congue, eros eget accumsan euismod, lorem dui vulputate leo, tincidunt efficitur risus metus ut risus. 
-Sed pharetra ipsum orci, eu cursus turpis semper egestas. 
+## Additionally 
 
+Lorem ipsum `dolor sit amet`, consectetur adipiscing elit. Pellentesque eu velit felis. 
+Duis *fermentum est nec* mollis scelerisque. 
+Vivamus interdum **efficitur mauris**, et dignissim velit egestas vitae. Cras dignissim sagittis varius.
+Pellentesque eu laoreet dui.
+Praesent congue, eros eget accumsan euismod, lorem dui vulputate leo, tincidunt efficitur risus metus ut risus.
+
+{% include figure.html img="uidaho-workshop.jpg" alt="workshop scene" caption="Make sure participants are on the same page!" width="75%" %}
+
+> Sed pharetra ipsum orci, eu cursus turpis semper egestas. 
 > Pellentesque sodales, felis auctor auctor rutrum, velit quam interdum erat, sit amet placerat urna nisl at justo.
 
-## Substep
+## Furthermore... 
 
 Nam maximus eget orci id pretium. Pellentesque feugiat mauris eu nulla viverra consectetur. Nullam rutrum augue eget mauris accumsan, ac elementum tellus lacinia. Sed pretium aliquet tortor in ornare. Sed eget aliquet metus. Integer sed arcu turpis. Duis auctor sollicitudin semper. Cras posuere, neque nec varius cursus, massa libero sodales elit, sed tempor nibh ex sit amet nisi. Quisque consequat ante quis diam malesuada, in imperdiet tortor mattis. Aliquam erat volutpat. Morbi tortor elit, sagittis quis nibh ut, gravida cursus arcu.
-
-{% include figure.html img="uidaho-workshop.jpg" alt="workshop scene" caption="Be sure to replace all the example values!" width="75%" %}
 
 Ut dapibus lectus tristique efficitur dictum. Quisque efficitur ornare sagittis. Donec ex sem, volutpat quis scelerisque quis, scelerisque non neque. Vivamus convallis felis vel eros pulvinar faucibus. Aliquam finibus pretium odio a pharetra. Nullam ac commodo magna. Fusce et feugiat sem. Nunc vitae scelerisque metus. Aenean sodales placerat mi in aliquet. Curabitur pulvinar auctor mauris quis faucibus. Ut commodo imperdiet ante, at dignissim tellus ultricies ut. Donec at lacus ultrices sem vulputate semper. Donec commodo porta nunc, non tristique mi interdum quis. Phasellus rhoncus bibendum ipsum, ac malesuada augue pulvinar et. Etiam finibus lacus massa, sit amet faucibus lorem consequat sit amet. 
