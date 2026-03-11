@@ -2,27 +2,12 @@
 title: Home
 ---
 
-# Workshop Template!
+# Bridging the Gap between Neural and Symbolic World Models for Robot Planning, Reasoning, and Action
 
-{% include figure.html img="uidaho-workshop.jpg" alt="intro image here" caption="Library workshop" width="75%" %}
-
-A minimal Jekyll theme for creating workshop websites.
+{% include figure.html img="workshop_banner.png" alt="banner image here" caption="" width="75%" %}
 
 *Add your workshop abstract here!*
 
-Learn how to create a super quick easy website for a workshop by writing a few markdown files! 
-Host it for free on GitHub with gh-pages, and share!
-Fun!
-
-*See also:* [workshop-template-b](https://evanwill.github.io/workshop-template-b/), Bootstrap version.
-
-<div class="toc" markdown="1">
-## Contents:
-
-{% for lesson in site.pages %}
-{% if lesson.nav == true %}- [{{ lesson.title }}]({{ lesson.url | relative_url }}){% endif %}
-{% endfor %}
-</div>
 
 Hosted by [University of Idaho Library](http://www.lib.uidaho.edu/), {{ site.pub_year }}.
  
