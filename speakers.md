@@ -9,7 +9,10 @@ nav: true
   {% for person in site.data.speakers %}
     <div class="person">
       <div class="circle-crop-wrapper">
-        <img src="{{ person.image | relative_url }}" alt="{{ person.name }}">
+        <img src="{{ person.image | relative_url }}" alt="{{ person.name }}"
+          {% if person.position %}
+            style="object-position: {{ person.position }};"
+          {% endif %}>
       </div>
       <h3>{{ person.name }}</h3>
       <p>{{ person.role }}</p>

@@ -10,10 +10,12 @@
   role: "Assistant Professor"
   affiliation: "Princeton University"
   image: "images/speaker_headshots/tom.jpg"
+  position: 50% 25%
 - name: "Emre Ugur"
   role: "Associate Professor"
   affiliation: "Bogazici University"
   image: "images/speaker_headshots/emre.png"
+  position: 50% 0%
 - name: "Siddharth Srivastava"
   role: "Associate Professor"
   affiliation: "Arizona State University"
